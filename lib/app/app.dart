@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'package:sortirin/app/routes/app_pages.dart';
 import 'package:sortirin/core/constants/app_colors.dart';
 import 'package:sortirin/core/theme/app_theme.dart';
+import 'package:sortirin/features/gamification/presentation/bindings/gamification_binding.dart';
 
 /// Root Sortirin application widget.
 class App extends StatelessWidget {
@@ -24,6 +25,7 @@ class App extends StatelessWidget {
     return GetMaterialApp(
       title: 'Sortirin',
       debugShowCheckedModeBanner: false,
+      initialBinding: GamificationBinding(),
       theme: AppTheme.dark,
       defaultTransition: Transition.fadeIn,
       initialRoute: AppPages.initial,
