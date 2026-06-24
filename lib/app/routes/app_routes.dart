@@ -9,11 +9,15 @@ class AppRoutes {
   static const String home = '/home';
   static const String camera = '/camera';
   static const String review = '/review';
-  static const String submissionResult = '/submission-result';
   static const String rewardCatalog = '/rewards';
   static const String redeemConfirm = '/rewards/redeem';
   static const String redemptionHistory = '/rewards/history';
   static const String leaderboard = '/leaderboard';
   static const String dashboard = '/dashboard';
   static const String profile = '/profile';
+
+  // Submission (F02)
+  static const String submissionSelect = '/submission/select';
+  static const String submissionCamera = '/submission/camera';
+  static const String submissionResult = '/submission/result';
 }

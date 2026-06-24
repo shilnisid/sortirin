@@ -10,6 +10,10 @@ import 'package:sortirin/features/leaderboard/presentation/bindings/leaderboard_
 import 'package:sortirin/features/leaderboard/presentation/views/leaderboard_view.dart';
 import 'package:sortirin/features/rewards/presentation/bindings/reward_binding.dart';
 import 'package:sortirin/features/rewards/presentation/views/reward_catalog_view.dart';
+import 'package:sortirin/features/submission/presentation/bindings/submission_binding.dart';
+import 'package:sortirin/features/submission/presentation/views/waste_selector_view.dart';
+import 'package:sortirin/features/submission/presentation/views/camera_view.dart';
+import 'package:sortirin/features/submission/presentation/views/submission_result_view.dart';
 
 /// All routes and their bindings.
 class AppPages {
@@ -56,6 +60,23 @@ class AppPages {
       name: AppRoutes.rewardCatalog,
       page: () => const RewardCatalogView(),
       binding: RewardBinding(),
+    ),
+
+    // ── Submission (F02) ──
+    GetPage(
+      name: AppRoutes.submissionSelect,
+      page: () => const WasteSelectorView(),
+      binding: SubmissionBinding(),
+    ),
+    GetPage(
+      name: AppRoutes.submissionCamera,
+      page: () => const CameraView(),
+      binding: SubmissionBinding(),
+    ),
+    GetPage(
+      name: AppRoutes.submissionResult,
+      page: () => const SubmissionResultView(),
+      binding: SubmissionBinding(),
     ),
   ];
 }

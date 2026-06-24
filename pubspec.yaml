@@ -53,6 +53,9 @@ dependencies:
   # OAuth types (re-exported by supabase)
   gotrue: ^2.20.0
 
+  # Supabase Storage types (transitive dep, needed for FileOptions)
+  storage_client: ^2.5.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
