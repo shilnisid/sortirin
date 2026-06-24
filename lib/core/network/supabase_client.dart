@@ -9,11 +9,11 @@ class SupabaseClientService {
 
   static Future<void> init({
     required String supabaseUrl,
-    required String supabaseAnonKey,
+    required String supabasePublishableKey,
   }) async {
     await Supabase.initialize(
       url: supabaseUrl,
-      publishableKey: supabaseAnonKey,
+      publishableKey: supabasePublishableKey,
     );
     _client = Supabase.instance.client;
   }

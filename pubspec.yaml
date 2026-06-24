@@ -44,6 +44,9 @@ dependencies:
   # Icons
   cupertino_icons: ^1.0.8
 
+  # .env loader
+  flutter_dotenv: ^5.2.1
+
   # URL launcher (for OAuth redirect)
   url_launcher: ^6.3.0
 
