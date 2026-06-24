@@ -6,10 +6,13 @@ import 'package:sortirin/features/auth/presentation/views/onboarding_view.dart';
 import 'package:sortirin/features/auth/presentation/views/complete_profile_view.dart';
 import 'package:sortirin/features/dashboard/presentation/bindings/dashboard_binding.dart';
 import 'package:sortirin/features/dashboard/presentation/views/dashboard_view.dart';
+import 'package:sortirin/features/dashboard/presentation/views/main_shell_view.dart';
 import 'package:sortirin/features/leaderboard/presentation/bindings/leaderboard_binding.dart';
 import 'package:sortirin/features/leaderboard/presentation/views/leaderboard_view.dart';
+import 'package:sortirin/features/profile/presentation/views/profile_view.dart';
 import 'package:sortirin/features/rewards/presentation/bindings/reward_binding.dart';
 import 'package:sortirin/features/rewards/presentation/views/reward_catalog_view.dart';
+import 'package:sortirin/features/rewards/presentation/views/redemption_history_view.dart';
 import 'package:sortirin/features/submission/presentation/bindings/submission_binding.dart';
 import 'package:sortirin/features/submission/presentation/views/waste_selector_view.dart';
 import 'package:sortirin/features/submission/presentation/views/camera_view.dart';
@@ -52,6 +55,14 @@ class AppPages {
       ],
     ),
     GetPage(
+      name: AppRoutes.mainShell,
+      page: () => const MainShellView(),
+    ),
+    GetPage(
+      name: AppRoutes.profile,
+      page: () => const ProfileView(),
+    ),
+    GetPage(
       name: AppRoutes.leaderboard,
       page: () => const LeaderboardView(),
       binding: LeaderboardBinding(),
@@ -59,6 +70,11 @@ class AppPages {
     GetPage(
       name: AppRoutes.rewardCatalog,
       page: () => const RewardCatalogView(),
+      binding: RewardBinding(),
+    ),
+    GetPage(
+      name: AppRoutes.redemptionHistory,
+      page: () => const RedemptionHistoryView(),
       binding: RewardBinding(),
     ),
 

@@ -15,6 +15,7 @@ class AppRoutes {
   static const String leaderboard = '/leaderboard';
   static const String dashboard = '/dashboard';
   static const String profile = '/profile';
+  static const String mainShell = '/main';
 
   // Submission (F02)
   static const String submissionSelect = '/submission/select';

@@ -76,7 +76,7 @@ class AuthController extends GetxController {
         district: district,
       );
       profile.value = updated;
-      Get.offAllNamed(AppRoutes.home);
+      Get.offAllNamed(AppRoutes.mainShell);
     } on ServerFailure catch (e) {
       errorMessage.value = e.message;
     } catch (e) {

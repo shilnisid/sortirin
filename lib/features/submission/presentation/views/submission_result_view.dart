@@ -143,7 +143,7 @@ class SubmissionResultView extends StatelessWidget {
                       label: 'Ke Dashboard',
                       onPressed: () {
                         controller.reset();
-                        Get.offAllNamed('/dashboard');
+                        Get.offAllNamed('/main');
                       },
                     ),
                     const SizedBox(height: AppSizes.sm),
